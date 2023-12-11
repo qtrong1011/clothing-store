@@ -1,3 +1,4 @@
+/* For desktop: */
 .category-preview-container {
     display: flex;
     flex-direction: column;
@@ -11,8 +12,28 @@
   
     .preview {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       column-gap: 20px;
+      row-gap: 20px;
+      // width: 100%;
     }
   }
+  /* For tablets: */
+  @media only screen and (max-width:768px) {
+    .category-preview-container{
+      .preview{
+        grid-template-columns: repeat(2,1fr);
+      }
+    }
+  }
+
+  /* For mobile phones: */
+  @media only screen and (max-width:600px) {
+    .category-preview-container{
+      .preview{
+        grid-template-columns: repeat(1,1fr);
+      }
+    }
+  }
+  
   

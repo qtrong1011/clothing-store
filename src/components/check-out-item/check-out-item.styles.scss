@@ -1,15 +1,18 @@
+/* For Desktop */
 .checkout-item-container {
     width: 100%;
     display: flex;
     min-height: 100px;
     border-bottom: 1px solid darkgrey;
     padding: 15px 0;
-    font-size: 20px;
+    // font-size: 20px;
     align-items: center;
+    justify-content: space-between;
   
     .image-container {
       width: 23%;
-      padding-right: 15px;
+      padding-right: 20px;
+      
   
       img {
         width: 100%;
@@ -18,13 +21,17 @@
     }
     .name,
     .quantity,
-    .price {
+    .price,
+
+    .price{
       width: 23%;
     }
+
   
     .quantity {
+      width: 23%;
       display: flex;
-  
+      // justify-content: center;
       .arrow {
         cursor: pointer;
       }
@@ -35,8 +42,31 @@
     }
   
     .remove-button {
+      width:8%;
       padding-left: 12px;
       cursor: pointer;
     }
   }
+
+
+@media only screen and (max-width: 600px){
+  .checkout-item-container {
+    .image-container{
+      width: 30%;
+    } 
+    .name{
+      width: 30%;
+    }
+    .price{
+      width: 8%;
+    }
+    .quantity{
+      width: 30%;
+    }
+    .remove-button{
+      display:none;
+    }
+
+  }
+}
   

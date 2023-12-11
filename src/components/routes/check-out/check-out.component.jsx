@@ -11,19 +11,19 @@ const Checkout = () => {
         <div className="checkout-container">
             <div className="checkout-header">
                 <div className="header-block">
-                    <span>Product</span>
+                    <span className='product-header'>Product</span>
                 </div>
                 <div className="header-block">
-                    <span>Description</span>
+                    <span className='description-header'>Description</span>
                 </div>
                 <div className="header-block">
-                    <span>Quantity</span>
+                    <span className='quantity-header'>Quantity</span>
                 </div>
                 <div className="header-block">
-                    <span>Price</span>
+                    <span className='price-header'>Price</span>
                 </div>
                 <div className="header-block">
-                    <span>Remove</span>
+                    <span className='remove-header'>Remove</span>
                 </div>
 
             </div>
